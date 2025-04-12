@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes - Student Dashboard</title>
+    <link rel="stylesheet" href="/pages/quizzes.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile">
+                <img id="profile-pic" src="../pic.jpg" alt="Profile Picture" />
+                <h2 id="student-name">Akbar Ali Samoo</h2>
+                <p id="student-email">akbarsamoo222@gmail.com</p>
+               <!-- Notification Icon -->
+               <div class="notification-wrapper" id="notificationIcon">
+                <img src="https://cdn-icons-png.flaticon.com/128/1156/1156949.png" width="30" alt="">
+                <span class="badge" id="badge">0</span>
+            </div>
+            </div>
+            <div class="nav-buttons">
+                <!-- Convert buttons into anchor tags -->
+                <a href="/index.html" class="nav-btn" id="dashboard-btn">Dashboard</a>
+                <a href="/pages/courses.html" class="nav-btn" id="courses-btn">Courses</a>
+                <a href="/pages/quizzes.html" class="nav-btn" id="quizzes-btn">Quizzes</a>
+                <a href="/pages/reminder.html" class="nav-btn" id="reminders-btn">Reminders</a>
+                <a href="/pages/profile.html" class="nav-btn" id="profile-btn">Profile</a>
+                <a href="/pages/progress.html" class="nav-btn" id="progress-btn">Progress</a>
+            </div>
+            <button id="theme-toggle" class="theme-btn">Toggle Theme</button>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="content">
+            <div class="quizzes-section">
+                <h1>Your Upcoming Quizzes</h1>
+
+                <div class="quiz-list">
+                    <div class="quiz-item">
+                        <h3>Graphic Design for Beginners Quiz</h3>
+                        <p>Progress: 80%</p>
+                        <p>Due: 3th May, 2025</p>
+                        <button class="btn-start">Start Quiz</button>
+                    </div>
+
+                    <div class="quiz-item">
+                        <h3>Python Mastery Bootcamp Quiz</h3>
+                        <p>Progress: 50%</p>
+                        <p>Due: 5nd May, 2025</p>
+                        <button class="btn-start">Start Quiz</button>
+                    </div>
+
+                    <div class="quiz-item">
+                        <h3>Cyber Security Quiz</h3>
+                        <p>Progress: 60%</p>
+                        <p>Due: 8th May, 2025</p>
+                        <button class="btn-start">Start Quiz</button>
+                    </div>
+
+
+                    <div class="quiz-item">
+                        <h3>iOS App Development with Swift</h3>
+                        <p>Progress: 30%</p>
+                        <p>Due: 9th May, 2025</p>
+                        <button class="btn-start">Start Quiz</button>
+                    </div>
+
+                    <!-- Add more quizzes here if needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

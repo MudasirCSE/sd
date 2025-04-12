@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="/pages/profile.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile">
+                <img id="profile-pic" src="../pic.jpg" alt="Profile Picture" />
+                <h2 id="student-name">Akbar Ali Samoo</h2>
+                <p id="student-email">akbarsamoo222@gmail.com</p>
+                <!-- Notification Icon -->
+                <div class="notification-wrapper" id="notificationIcon">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1156/1156949.png" width="30" alt="">
+                    <span class="badge" id="badge">0</span>
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <!-- Convert buttons into anchor tags -->
+                <a href="/index.html" class="nav-btn" id="dashboard-btn">Dashboard</a>
+                <a href="/pages/courses.html" class="nav-btn" id="courses-btn">Courses</a>
+                <a href="/pages/quizzes.html" class="nav-btn" id="quizzes-btn">Quizzes</a>
+                <a href="/pages/reminder.html" class="nav-btn" id="reminders-btn">Reminders</a>
+                <a href="/pages/profile.html" class="nav-btn" id="profile-btn">Profile</a>
+                <a href="/pages/progress.html" class="nav-btn" id="progress-btn">Progress</a>
+            </div>
+            <button id="theme-toggle" class="theme-btn">Toggle Theme</button>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <section class="profile-modern">
+                <h1 class="profile-title">👨‍💻 About Akbar</h1>
+
+                <!-- Overview Card -->
+                <div class="overview-card">
+                    <img src="../pic.jpg" alt="Mudasir Profile" class="avatar" />
+                    <div class="overview-info">
+                        <h2 id="student-name">Akbar Ali Samoo</h2>
+                        <p id="student-email">📧akbarsamoo222@gmail.com</p>
+                        <p>📱 0300-0000000</p>
+                        <p>📍 Hyderabad, Pakistan</p>
+                    </div>
+                </div>
+
+                <!-- Work Experience Section -->
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>💼 Work Experience</h3>
+                        <ul>
+                            <li><strong>2020–Present:</strong> Software Engineer at ABC Corp</li>
+                            <li><strong>2018–2020:</strong> Junior Developer at XYZ Ltd</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="skills-section">
+                    <h3>🛠️ Skills</h3>
+                    <div class="skills-badges">
+                        <span class="badg">Ethical Hacking</span>
+                        <span class="badg">Graphic Design Principles</span>
+                        <span class="badg">Adobe Photoshop</span>
+                        <span class="badg">UI/UX Design</span>
+                        <span class="badg">Logo Design</span>
+                    </div>
+                </div>
+
+                <!-- Contact Information (Connect) -->
+                <div class="links-card">
+                    <h3>🔗 Connect with Me</h3>
+                    <p><a href="#" target="_blank">🔹 LinkedIn
+                            Profile</a></p>
+                    <p><a href="#" target="_blank">🔹 GitHub Portfolio</a></p>
+                </div>
+            </section>
+        </div>
+
+
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="/pages/courses.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar Section -->
+        <div class="sidebar">
+            <div class="profile">
+                <img id="profile-pic" src="../pic.jpg" alt="Profile Picture" />
+                <h2 id="student-name">Akbar Ali Samoo</h2>
+                <p id="student-email">akbarsamoo222@gmail.com</p>
+                <!-- Notification Icon -->
+                <div class="notification-wrapper" id="notificationIcon">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1156/1156949.png" width="30" alt="">
+                    <span class="badge" id="badge">0</span>
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <!-- Convert buttons into anchor tags -->
+                <a href="/index.html" class="nav-btn" id="dashboard-btn">Dashboard</a>
+                <a href="/pages/courses.html" class="nav-btn" id="courses-btn">Courses</a>
+                <a href="/pages/quizzes.html" class="nav-btn" id="quizzes-btn">Quizzes</a>
+                <a href="/pages/reminder.html" class="nav-btn" id="reminders-btn">Reminders</a>
+                <a href="/pages/profile.html" class="nav-btn" id="profile-btn">Profile</a>
+                <a href="/pages/progress.html" class="nav-btn" id="progress-btn">Progress</a>
+            </div>
+            <button id="theme-toggle" class="theme-btn">Toggle Theme</button>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <section class="courseSection">
+                <h1 class="mainHeading">Your Courses</h1>
+                <div class="courseGrid">
+                    <!-- Course Cards -->
+                    <div class="courseCard new-style">
+                        <img src="https://img-c.udemycdn.com/course/480x270/394676_ce3d_5.jpg" alt="Python Bootcamp">
+                        <div class="courseInfo">
+                            <h3>Python Mastery Bootcamp</h3>
+                            <p>by Jose Portilla</p>
+                            <button class="view-btn">View Course</button>
+                        </div>
+                    </div>
+
+                    <div class="courseCard new-style">
+                        <img src="https://img.freepik.com/free-vector/cartoon-graphic-design-landing-page_52683-70881.jpg?ga=GA1.1.20596469.1738947157&semt=ais_hybrid&w=740"
+                            alt="Graphic Design">
+                        <div class="courseInfo">
+                            <h3>Graphic Design for Beginners</h3>
+                            <p>by Lindsay Marsh</p>
+                            <button class="view-btn">View Course</button>
+                        </div>
+                    </div>
+
+                    <div class="courseCard new-style">
+                        <img src="https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg?ga=GA1.1.20596469.1738947157&semt=ais_hybrid&w=740"
+                            alt="iOS App Development">
+                        <div class="courseInfo">
+                            <h3>iOS App Development with Swift</h3>
+                            <p>by Jason Dion</p>
+                            <button class="view-btn">View Course</button>
+                        </div>
+                    </div>
+
+                    <div class="courseCard new-style">
+                        <img src="https://img.freepik.com/free-vector/cyber-security-banner-template_23-2148881294.jpg?ga=GA1.1.20596469.1738947157&semt=ais_hybrid&w=740"
+                            alt="Photography">
+                        <div class="courseInfo">
+                            <h3>Cyber Security</h3>
+                            <p>by Phil Ebiner</p>
+                            <button class="view-btn">View Course</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile">
+                <img id="profile-pic" src="pic.jpg" alt="Profile Picture" />
+                <h2 id="student-name">Akbar Ali Samoo</h2>
+                <p id="student-email">akbarsamoo222@gmail.com</p>
+                <!-- Notification Icon -->
+                <div class="notification-wrapper" id="notificationIcon">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1156/1156949.png" width="30" alt="">
+                    <span class="badge" id="badge">0</span>
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <!-- Convert buttons into anchor tags -->
+                <a href="/pages/courses.html" class="nav-btn" id="courses-btn">Courses</a>
+                <a href="/pages/quizzes.html" class="nav-btn" id="quizzes-btn">Quizzes</a>
+                <a href="/pages/reminder.html" class="nav-btn" id="reminders-btn">Reminders</a>
+                <a href="/pages/profile.html" class="nav-btn" id="profile-btn">Profile</a>
+                <a href="/pages/progress.html" class="nav-btn" id="progress-btn">Progress</a>
+            </div>
+            <button id="theme-toggle" class="theme-btn">Toggle Theme</button>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="content">
+            <div class="clean-dashboard">
+                <h1 class="dashboard-heading">Dashboard Overview</h1>
+        
+                <!-- Quick Access Panels -->
+                <div class="quick-panels">
+                    <div class="panel">
+                        <h3>📚 Courses</h3>
+                        <p>Continue your current modules</p>
+                        <a href="/pages/courses.html" class="panel-btn">View Courses</a>
+                    </div>
+                    <div class="panel">
+                        <h3>🧠 Quizzes</h3>
+                        <p>3 quizzes are waiting</p>
+                        <a href="/pages/quizzes.html" class="panel-btn">Take Quiz</a>
+                    </div>
+                    <div class="panel">
+                        <h3>📝 Reminders</h3>
+                        <p>Stay on track with your schedule</p>
+                        <a href="/pages/reminder.html" class="panel-btn">View Reminders</a>
+                    </div>
+                </div>
+        
+                <!-- Task Preview -->
+                <div class="task-calendar">
+                    <h2>Upcoming Tasks</h2>
+                    <div class="task-list">
+                        <div class="task">
+                            <strong>Apr 14:</strong> WEB PBL Submission Date
+                        </div>
+                        <div class="task">
+                            <strong>Apr 15:</strong> Cyber Security Session
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

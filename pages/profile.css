@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+.notification-wrapper {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  padding: 4px 8px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  font-size: 12px;
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #003161;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height:740px;
+
+}
+
+.profile {
+  text-align: center;
+}
+
+#profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+h2,
+p {
+  margin: 10px 0;
+}
+
+.nav-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.nav-buttons a:hover {
+  background-color: #1abc9c;
+}
+
+.nav-btn {
+  padding: 12px;
+  background-color: #34495e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+.sidebar .nav-buttons button:hover {
+  background-color: #1abc9c;
+}
+
+.theme-btn {
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+}
+.sidebar .theme-btn:hover {
+  background-color: #c0392b;
+}
+/* Main content area styling */
+/* Container to wrap everything */
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.profile-modern {
+  padding: 10px 0;
+  background: #f4f6f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.profile-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Overview Card */
+.overview-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  padding: 20px 0px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: fill;
+  border: 3px solid #007bff;
+}
+
+.overview-info h2 {
+  margin: 0;
+  color: #222;
+}
+
+.overview-info p {
+  margin: 6px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Timeline Section for Work */
+.timeline {
+  display: grid;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.timeline-item {
+  background: #fff;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.timeline-item h3 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.timeline-item ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.timeline-item li {
+  padding: 6px 0;
+  color: #444;
+}
+
+/* Skills Section */
+.skills-section {
+  margin-bottom: 40px;
+}
+
+.skills-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.badg {
+  background: #007bff;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  transition: background 0.3s;
+}
+
+.badge:hover {
+  background: #0056b3;
+}
+
+/* Links Section (Contact Information) */
+.links-card {
+  background: #fff;
+  padding: 20px 10px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.links-card a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.links-card a:hover {
+  text-decoration: underline;
+}
+
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #181818;
+  color: #f4f4f9;
+}
+
+/* Sidebar in Dark Theme */
+body.dark-theme .sidebar {
+  background-color: #333;
+  color: white;
+}
+
+/* Buttons in Dark Theme */
+body.dark-theme .nav-btn {
+  background-color: #444;
+  color: white;
+  border: 1px solid #555;
+}
+
+body.dark-theme .theme-btn {
+  background-color: #444;
+  color: white;
+}
+
+/* Profile Section in Dark Theme */
+body.dark-theme .profile-section h1,
+body.dark-theme .section h2 {
+  color: #f4f4f9; /* Light text color */
+}
+
+body.dark-theme .section p,
+body.dark-theme .section ul {
+  color: #bbb; /* Lighter text color for dark theme */
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 426px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .sidebar .profile img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .section {
+    padding: 10px;
+  }
+}
